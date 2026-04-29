@@ -87,3 +87,60 @@ This project is hosted on GitHub and includes multiple commits showing the devel
 
 ## Conclusion
 This assignment helped me understand how React projects are structured and how to properly manage version control using Git and GitHub.
+# React + Tailwind CSS Project
+
+## 📌 Project Overview
+This project is a React application where I migrated from Bootstrap to Tailwind CSS and built a simple login page using utility-first styling.
+
+---
+
+## 🛠️ Steps Performed
+
+### 1. Removed Bootstrap
+- Uninstalled Bootstrap from the project
+- Removed Bootstrap imports from the codebase
+
+### 2. Installed Tailwind CSS
+- Installed Tailwind, PostCSS, and Autoprefixer
+- Configured `tailwind.config.js`
+- Set up `postcss.config.cjs`
+- Added Tailwind directives in `index.css`
+
+### 3. Fixed Configuration Issues
+- Resolved PostCSS module format errors
+- Fixed Tailwind v4 compatibility issue by installing `@tailwindcss/postcss`
+
+### 4. Built Login Page
+- Created a simple login UI
+- Styled using Tailwind utility classes
+- Used flexbox, spacing, borders, and hover effects
+
+---
+
+## 🎨 Technologies Used
+- React (Vite)
+- Tailwind CSS
+- Node.js
+- PostCSS
+
+---
+
+## 🚀 Features
+- Responsive login page
+- Clean UI using Tailwind utility classes
+- Modular component structure
+
+---
+
+## 📚 What I Learned
+- Difference between Bootstrap and Tailwind CSS
+- How to configure PostCSS with Tailwind
+- How to debug Vite + React configuration issues
+- Importance of commit history in version control
+
+---
+
+## 📌 Git Workflow
+- Commit 1: Remove Bootstrap
+- Commit 2: Install and configure Tailwind CSS
+- Commit 3: Style login page using Tailwind CSS
