@@ -1,31 +1,48 @@
 function Login() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-gray-100 to-gray-300">
+    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-600">
 
-      <div className="bg-white p-10 rounded-2xl shadow-2xl w-80 border border-gray-100">
+      {/* Glow background effect */}
+      <div className="absolute w-72 h-72 bg-pink-400 rounded-full blur-3xl opacity-30 -z-10 top-20 left-20"></div>
+      <div className="absolute w-72 h-72 bg-blue-400 rounded-full blur-3xl opacity-30 -z-10 bottom-20 right-20"></div>
 
-        <h2 className="text-3xl font-extrabold text-center mb-6 text-gray-800">
-          Login
+      {/* Card */}
+      <div className="w-80 bg-white/20 backdrop-blur-xl p-10 rounded-2xl shadow-2xl border border-white/30">
+
+        {/* Title */}
+        <h2 className="text-4xl font-extrabold text-center text-white mb-2">
+          Welcome
         </h2>
 
+        <p className="text-center text-white/80 mb-8 text-sm">
+          Please login to continue
+        </p>
+
+        {/* Username */}
         <input
           type="text"
           placeholder="Username"
-          className="w-full p-3 mb-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-blue-200 transition"
+          className="w-full mb-4 px-4 py-3 rounded-xl bg-white/90 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 transition"
         />
 
+        {/* Password */}
         <input
           type="password"
           placeholder="Password"
-          className="w-full p-3 mb-6 border border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-blue-200 transition"
+          className="w-full mb-6 px-4 py-3 rounded-xl bg-white/90 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-purple-300 transition"
         />
 
-        <button className="w-full bg-blue-500 text-white p-3 rounded-xl hover:bg-blue-600 active:scale-95 transition duration-200 shadow-md">
+        {/* Button */}
+        <button className="w-full py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition duration-200">
           Login
         </button>
 
-        <p className="text-center text-xs text-gray-500 mt-4">
-          Forgot password?
+        {/* Footer */}
+        <p className="text-center text-xs text-white/70 mt-6">
+          Don’t have an account?{" "}
+          <span className="text-yellow-300 font-semibold cursor-pointer hover:underline">
+            Sign up
+          </span>
         </p>
 
       </div>
